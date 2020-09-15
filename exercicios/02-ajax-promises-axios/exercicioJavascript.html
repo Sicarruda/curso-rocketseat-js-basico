@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">        
+        <title>Curso Javascript </title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <section id="botoesIniciais">
+            <button onclick="mostrarAlerta()">Me Aperte</button>
+            <!--o botão vai mostrar a mensagem quando for clicado mostrarAlerta() é uma function descrita lá em baixo-->
+            <button onmouseover="mostrarAlerta()">Botão: Passe o mouse </button>
+            <!--o botão vai mostrar a mensagem quando o mouse passar por cima -->
+        </section>
+
+        <section>
+            <label>tecle para aparecer o alerta >></label>
+            <input onkeypress="mostrarAlerta()">
+            <!-- o onkeypress vai executar a ação quando toda a operação de clicar uma tecla for 
+            concluida, o onkeyup vai executar quando o usuario soltar a telha e o onkeydown quando
+            ele precionar a tecla-->
+            <label for = 'nome'>digita aqui >></label>
+            <input type='text' name ='nome' id = 'nome' class="nome">
+            <button class="botao">Ignora</button>
+            <button id='enviar'>Enviar</button>
+        </section>
+
+        <section id='criacao'></section>
+
+        <section id='toDo' >
+            <ul>
+            </ul>
+            <input type='text' class="toDo" placeholder="Digite um To Do">
+            <button class="toDo">Adicionar To Do</button>
+
+        </section>
+
+        <script src="http://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="exercicioJavascript.js"></script>
+       
+
+    </body>
+</html>
